@@ -1,0 +1,65 @@
+.NavBar {
+  background-color: #383637;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 7rem;
+  padding: 0 2.5%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  box-shadow: 0 0 2rem 1px black;
+}
+
+.IconContainer {
+  display: flex;
+  position: relative;
+  color: #FFC367;
+  width: 6rem;
+  height: 100%;
+  align-items: center;
+}
+
+.IconContainer h1 {
+  position: absolute;
+  font-size: 5rem;
+  margin: 0;
+  height: fit-content;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.AIcon {
+  left: 0;
+}
+
+.GIcon {
+  right: 0;
+}
+
+.OptionsContainer {
+  display: flex;
+  gap: clamp(30px, 2vw, 100px);
+  margin-right: auto;
+}
+
+.OptionsContainer button {
+  color: #B1B1B1;
+  background-color: transparent;
+  border: 0;
+  font-size: clamp(1rem, .5rem + 1vw, 1.5rem);
+  font-family: "Montserrat" ;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.LinksContainer {
+  display: flex;
+  gap: .5rem;
+}
+
+.LinksContainer img {
+  height: 2.7rem;
+}
+

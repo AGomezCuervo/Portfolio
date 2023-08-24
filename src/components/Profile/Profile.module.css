@@ -1,0 +1,47 @@
+.BGContainer {
+  margin: 0 auto;
+  margin-top: 9rem;
+  padding: 0 3%;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  grid-template-rows: auto;
+  max-width: 1400px;
+  justify-content: center;
+  font-family: "Montserrat";
+}
+
+.LeftContainer {
+  width: 100%;
+}
+
+.RightContainer {
+  width: 100%;
+}
+
+.LeftContainer h1 {
+  color: #FFC367;
+  font-size: clamp(2rem, 2.5rem + 2vw, 5rem);
+  max-width: 39rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.LeftContainer h2 {
+  display: block;
+  margin: 0 auto;
+  color: #B1B1B1;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: clamp(1rem, .7rem + 1vw, 3rem) ;
+  text-align: left;
+}
+
+.RightContainer img {
+  display: block;
+  margin: auto auto;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 100%;
+}
