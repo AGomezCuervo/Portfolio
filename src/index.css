@@ -12,35 +12,35 @@ body {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./assets/Fonts/Montserrat-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./assets/Fonts/Montserrat-SemiBold.ttf') format('truetype');
+  src: url('./assets/fonts/Montserrat-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./assets/Fonts/Montserrat-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./assets/Fonts/Montserrat-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/Montserrat-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('./assets/Fonts/Montserrat-Light.ttf') format('truetype');
+  src: url('./assets/fonts/Montserrat-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }

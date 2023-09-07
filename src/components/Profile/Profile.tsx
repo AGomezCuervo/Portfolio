@@ -1,5 +1,5 @@
 import style from "./Profile.module.css";
-import antonio from "../../assets/antonio.jpg";
+import antonio from "../../assets/images/antonio.jpg";
 import { useSelector } from "react-redux";
 import { selectData } from "../../redux/features/profileSlice";
 

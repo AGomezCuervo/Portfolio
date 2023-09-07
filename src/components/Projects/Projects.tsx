@@ -1,5 +1,5 @@
 import style from "./Projects.module.css";
-import dogImage from "../../assets/Images/landingPage.png";
+import dogImage from "../../assets/images/landingPage.png";
 import { useSelector } from "react-redux";
 import { selectData } from "../../redux/features/profileSlice";
 
@@ -12,26 +12,8 @@ const Projects = () => {
         <div tabIndex={1} className={style.Card}>
           <div className={style.Blur}></div>
           <div className={style.Links}>
-            <a href="https://github.com/AGomezCuervo/DOGS-PI">See code</a> 
-            <a>Web page</a>
-          </div>
-          <img src={dogImage}/>
-        </div>
-
-        <div tabIndex={1} className={style.Card}>
-          <div className={style.Blur}></div>
-          <div className={style.Links}>
-            <a href="https://github.com/AGomezCuervo/DOGS-PI">See code</a> 
-            <a>Web page</a>
-          </div>
-          <img src={dogImage}/>
-        </div>
-
-        <div tabIndex={1} className={style.Card}>
-          <div className={style.Blur}></div>
-          <div className={style.Links}>
-            <a href="https://github.com/AGomezCuervo/DOGS-PI">See code</a> 
-            <a>Web page</a>
+            <a href="https://github.com/AGomezCuervo/DOGS-PI">{data.webpage}</a> 
+            <a>{data.code}</a>
           </div>
           <img src={dogImage}/>
         </div>
