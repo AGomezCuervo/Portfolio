@@ -12,8 +12,8 @@ const Projects = () => {
         <div tabIndex={1} className={style.Card}>
           <div className={style.Blur}></div>
           <div className={style.Links}>
-            <a href="https://github.com/AGomezCuervo/DOGS-PI">{data.webpage}</a> 
-            <a>{data.code}</a>
+            <a>{data.webpage}</a> 
+            <a href="https://github.com/AGomezCuervo/DOGS-PI">{data.code}</a>
           </div>
           <img src={dogImage}/>
         </div>
