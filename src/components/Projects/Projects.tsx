@@ -1,20 +1,42 @@
-import style from "./Projects.module.css"
+import style from "./Projects.module.css";
+import dogImage from "../../assets/Images/landingPage.png";
+import { useSelector } from "react-redux";
+import { selectData } from "../../redux/features/profileSlice";
 
 const Projects = () => {
+  const data = useSelector(selectData)
   return (
-    <section>
+    <>
+      <h1 className={style.Title}>{data.projects}</h1>
       <div className={style.BGContainer}>
-        <div className={style.Card}>
-          <h2>Dogs-Pi</h2>
+        <div tabIndex={1} className={style.Card}>
+          <div className={style.Blur}></div>
+          <div className={style.Links}>
+            <a href="https://github.com/AGomezCuervo/DOGS-PI">See code</a> 
+            <a>Web page</a>
+          </div>
+          <img src={dogImage}/>
         </div>
-        <div className={style.Card}>
-          <h2>Dogs-Pi</h2>
+
+        <div tabIndex={1} className={style.Card}>
+          <div className={style.Blur}></div>
+          <div className={style.Links}>
+            <a href="https://github.com/AGomezCuervo/DOGS-PI">See code</a> 
+            <a>Web page</a>
+          </div>
+          <img src={dogImage}/>
         </div>
-        <div className={style.Card}>
-          <h2>Dogs-Pi</h2>
+
+        <div tabIndex={1} className={style.Card}>
+          <div className={style.Blur}></div>
+          <div className={style.Links}>
+            <a href="https://github.com/AGomezCuervo/DOGS-PI">See code</a> 
+            <a>Web page</a>
+          </div>
+          <img src={dogImage}/>
         </div>
       </div>
-    </section>
+    </>
   )
 }
 

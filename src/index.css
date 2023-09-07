@@ -1,5 +1,13 @@
 body {
   background-color: #4F4E4E;
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #FFC367;
+  --secundary-color: #B1B1B1;
 }
 
 @font-face {

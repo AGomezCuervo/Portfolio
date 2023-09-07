@@ -1,12 +1,11 @@
 .BGContainer {
   margin: 0 auto;
-  margin-top: 9rem;
-  padding: 0 3%;
+  margin-top: 8rem;
   display: grid;
-  grid-auto-flow: dense;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
   grid-template-rows: auto;
-  max-width: 1400px;
+  max-width: 1700px;
   justify-content: center;
   font-family: "Montserrat";
 }
@@ -21,8 +20,7 @@
 
 .LeftContainer h1 {
   color: #FFC367;
-  font-size: clamp(2rem, 2.5rem + 2vw, 5rem);
-  max-width: 39rem;
+  font-size: clamp(2rem,3vw + 1rem, 5rem);
   display: block;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -34,14 +32,14 @@
   color: #B1B1B1;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: clamp(1rem, .7rem + 1vw, 3rem) ;
+  font-size: clamp(1rem,1vw + .5rem, 4rem) ;
   text-align: left;
 }
 
 .RightContainer img {
   display: block;
   margin: auto auto;
-  max-width: 400px;
   object-fit: cover;
+  height: clamp(10rem, 20vw + 1.5rem, 26rem);
   border-radius: 100%;
 }

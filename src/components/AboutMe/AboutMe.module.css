@@ -1,0 +1,54 @@
+.BGContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: .5rem;
+}
+
+.Title {
+  color: var(--primary-color);
+  font-size: clamp(1.2rem, 2vw + 1rem, 4rem);
+  text-align: left;
+}
+
+.BGContainer img {
+  height: clamp(2rem, 3vw + 1.5rem, 4.7rem);
+  filter: grayscale(100%) brightness(1000);
+  position: relative;
+  z-index: -1;
+}
+
+.BGContainer {
+  color: var(--secundary-color);
+  font-weight: 400;
+}
+
+.LeftContainer h2 {
+  font-weight: 400;
+  font-size: clamp(1rem,1vw + .5rem, 4rem);
+  text-align: left;
+}
+
+.RightContainer h2 {
+  font-weight: 400;
+  margin: 0;
+  font-size: clamp(1rem, 1vw + .5rem, 2rem);
+}
+
+.RightContainer h1 {
+  height: clamp(2rem, 3vw + 1.7rem, 4.7rem);
+  margin: 0;
+  font-weight: 500;
+  font-size: clamp(2rem, 3vw + .5rem, 4.7rem);
+  color: white;
+}
+
+.RightContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+.RightContainer > div {
+  height: fit-content;
+  margin: auto auto;
+}

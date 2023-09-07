@@ -1,29 +1,31 @@
 .NavBar {
   background-color: #383637;
   left: 0;
-  position: fixed;
+  position: sticky;
   right: 0;
   top: 0;
-  height: 7rem;
+  height: 5.5rem;
   padding: 0 2.5%;
   display: flex;
   align-items: center;
   gap: 5%;
   box-shadow: 0 0 2rem 1px black;
+  transition: 0.1s ease-out;
 }
+
 
 .IconContainer {
   display: flex;
   position: relative;
   color: #FFC367;
-  width: 6rem;
+  width: 5.5rem;
   height: 100%;
   align-items: center;
 }
 
 .IconContainer h1 {
   position: absolute;
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin: 0;
   height: fit-content;
   font-family: "Montserrat";
@@ -48,10 +50,28 @@
   color: #B1B1B1;
   background-color: transparent;
   border: 0;
-  font-size: clamp(1rem, .5rem + 1vw, 1.5rem);
+  font-size: clamp(1rem, 1vw, 1.5rem);
   font-family: "Montserrat" ;
   font-weight: 600;
   cursor: pointer;
+}
+
+.Language {
+  display: block;
+  margin: auto 0;
+  background-color: transparent;
+  border: var(--secundary-color) 2px solid;
+  padding: .3rem .2rem;
+  border-radius: .3rem;
+  color: var(--secundary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.MenuContainer {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .LinksContainer {
@@ -63,3 +83,81 @@
   height: 2.7rem;
 }
 
+.MenuButton {
+  display: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.DropMenu {
+  display: none;
+  position: absolute;
+  min-height: 8rem;
+  min-width: 10rem;
+  bottom: -10rem;
+  right: 1rem;
+  background-color: #383637 ;
+  box-shadow: 0 10px 2rem 1px black;
+}
+
+.DropMenu button {
+  color: var(--secundary-color);
+  font-weight: 600;
+  font-size: clamp(1rem, .7rem + 1vw, 1.5rem);
+  background: transparent;
+  border: 0;
+  display: block;
+  margin: .9rem auto;
+  cursor: pointer;
+}
+
+
+.DropMenu img {
+  height: 1.8rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.DropMenu > div {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 1.5rem;
+  gap: .5rem;
+  margin-bottom: 1rem;
+}
+
+.MenuButton img {
+  height: 2rem;
+}
+
+.Input {
+  display: none;
+}
+
+.Hidden {
+  top: -5.5rem;
+}
+
+@media screen and (max-width: 720px) {
+  .LinksContainer {
+    display: none;
+  }
+
+  .OptionsContainer {
+    display: none;
+  }
+
+  .MenuButton {
+    display: initial;
+  }
+
+  .NavBar {
+    justify-content: space-between;
+  }
+
+  .Input:checked~.DropMenu  {
+    display: initial;
+  }
+}
