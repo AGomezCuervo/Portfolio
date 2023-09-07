@@ -3,18 +3,14 @@ import github from "../../assets/icons/github.svg";
 import linkedin from "../../assets/icons/linkedin.svg";
 import gmail from "../../assets/icons/gmail.svg";
 import React from "react";
-import { useSelector } from "react-redux";
-import { selectData } from "../../redux/features/profileSlice";
 
 interface References {
-  profileRef: React.RefObject<HTMLElement>;
   aboutMeRef: React.RefObject<HTMLElement>;
   projectsRef: React.RefObject<HTMLElement>;
 }
 
 const Footer = (props: References) => {
   const {aboutMeRef, projectsRef} = props;
-  const data = useSelector(selectData)
 
   const scrollView = (event: React.MouseEvent<HTMLButtonElement>) => {
     const name = (event.target as HTMLButtonElement).name;

@@ -12,7 +12,7 @@ function App() {
   const projectsRef = useRef<HTMLElement>(null)
   return (
     <>
-      <NavBar profileRef={profileRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef}/>
+      <NavBar aboutMeRef={aboutMeRef} projectsRef={projectsRef}/>
       <section ref={profileRef} className="ProfileContainer">
         <Profile/>
       </section>
@@ -26,7 +26,7 @@ function App() {
       <section ref={projectsRef}>
         <Projects/> 
       </section>
-      <Footer profileRef={profileRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef}/>
+      <Footer aboutMeRef={aboutMeRef} projectsRef={projectsRef}/>
     </>
   )
 }
